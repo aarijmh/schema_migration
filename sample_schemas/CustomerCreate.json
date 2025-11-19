@@ -1,0 +1,2793 @@
+[
+    {
+        "steps": [
+            {
+                "command": {
+                    "name": "visit",
+                    "fields": [
+                        {
+                            "name": "visit",
+                            "type": "text",
+                            "label": "Browse to URL",
+                            "place_holder": "Browse to URL",
+                            "value": "http://52.15.154.57:9089/BrowserWeb/servlet/BrowserServlet",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "value": "",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 1
+            },
+            {
+                "command": {
+                    "name": "type",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Value",
+                            "value": "INPUT",
+                            "required": true,
+                            "is_unique": false
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "signOnName",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#signOnName"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "signOnName"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#signOnName"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[1]/div[2]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "input.input_user"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "form > div:nth-child(8) > table:nth-child(8) > tbody > tr:nth-child(2) > td > input:nth-child(2)"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='signOnName'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='middle']/form/div/table/tbody/tr[2]/td/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//div[@id='middle']/form/div/table/tbody/tr[2]/td/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false
+                },
+                "order": 2
+            },
+            {
+                "command": {
+                    "name": "password",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "password",
+                            "label": "Password",
+                            "place_holder": "Enter Password",
+                            "value": "123456",
+                            "required": true
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "password",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#password"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "password"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#password"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[1]/div[2]/form[1]/div[1]/table[1]/tbody[1]/tr[4]/td[1]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "input.input_box"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "form > div:nth-child(8) > table:nth-child(8) > tbody > tr:nth-child(4) > td > input:nth-child(2)"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='password'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='middle']/form/div/table/tbody/tr[4]/td/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//div[@id='middle']/form/div/table/tbody/tr[4]/td/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 3
+            },
+            {
+                "command": {
+                    "name": "keypress",
+                    "fields": [
+                        {
+                            "name": "option",
+                            "type": "lookup",
+                            "label": "Option",
+                            "place_holder": "Option",
+                            "selected": "enter",
+                            "required": true,
+                            "values": [
+                                {
+                                    "option": "backspace",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "down",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "enter",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "escape",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "left",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "page down",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "page up",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "right",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "tab",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "up",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "shift+w",
+                                    "fields": [
+                                    ]
+                                },
+                                {
+                                    "option": "F5(reload)",
+                                    "fields": [
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Element Name",
+                            "place_holder": "Element Name",
+                            "value": "enter",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#password"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "password"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#password"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[1]/div[2]/form[1]/div[1]/table[1]/tbody[1]/tr[4]/td[1]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "input.input_box"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "form > div:nth-child(8) > table:nth-child(8) > tbody > tr:nth-child(4) > td > input:nth-child(2)"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='password'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='middle']/form/div/table/tbody/tr[4]/td/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//div[@id='middle']/form/div/table/tbody/tr[4]/td/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "textarea",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "value": "",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 4
+            },
+            {
+                "command": {
+                    "name": "switch to iframe",
+                    "fields": [
+                        {
+                            "name": "index",
+                            "type": "text",
+                            "label": "Enter Index",
+                            "place_holder": "Enter Index",
+                            "value": "1",
+                            "required": true
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "1",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 5
+            },
+            {
+                "command": {
+                    "_id": "68c90f99f9c759340c6dae2a",
+                    "order": 6,
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "User Menu",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "css:finder",
+                                    "selector": ".menuMargin:nth-child(1) > .clsHasKids > span"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/ul[1]/li[1]/span[1]"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:position",
+                                    "selector": "body.window > div:nth-child(3) > ul.menuMargin > li.clsHasKids > span"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > ul > li > span"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//span[@onclick='ProcessMouseClick(event)'])[1]"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='pane_']/ul/li/span)[1]"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:innerText",
+                                    "selector": "//span[contains(.,'User Menu')]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "//span[contains(.,'User Menu2')]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true,
+                            "value": "Test Des"
+                        }
+                    ],
+                    "template_id": null,
+                    "is_random": false,
+                    "is_skip": false
+                },
+                "order": 6
+            },
+            {
+                "command": {
+                    "_id": "68ad9a1b59ce08d7ed7f2ca8",
+                    "order": 7,
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "Customer",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "css:finder",
+                                    "selector": ".menuMargin:nth-child(1) > .clsHasKids > ul > .clsHasKids:nth-child(2) > span"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/ul[1]/li[1]/ul[1]/li[2]/span[1]"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:position",
+                                    "selector": "body.window > div:nth-child(3) > ul.menuMargin > li.clsHasKids > ul:nth-child(2) > li.clsHasKids:nth-child(2) > span"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > ul > li > ul:nth-child(2) > li:nth-child(2) > span"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//span[@onclick='ProcessMouseClick(event)'])[11]"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='pane_']/ul/li/ul/li[2]/span)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//div[@id='pane_']/ul/li/ul/li[2]/span)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true,
+                            "value": "click desc"
+                        }
+                    ],
+                    "template_id": null,
+                    "is_random": false,
+                    "is_skip": false
+                },
+                "order": 7
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "Individual Customer",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "linkText",
+                                    "selector": "Individual Customer"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "css:finder",
+                                    "selector": ".menuMargin:nth-child(1) > .clsHasKids > ul > .clsHasKids:nth-child(2) > ul > li:nth-child(1) > a"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/ul[1]/li[1]/ul[1]/li[2]/ul[1]/li[1]/a[1]"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:position",
+                                    "selector": "body.window > div:nth-child(3) > ul.menuMargin > li.clsHasKids > ul:nth-child(2) > li.clsHasKids:nth-child(2) > ul:nth-child(2) > li > a"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > ul > li > ul:nth-child(2) > li:nth-child(2) > ul:nth-child(2) > li > a"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "xpath:link",
+                                    "selector": "(//a[contains(text(),'Individual Customer')])[1]"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//a[@onclick=\"javascript:menu_history('NEW','CUSTOMER,INPUT I F3');processMenuHeaderText('Individual Customer')\"])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='pane_']/ul/li/ul/li[2]/ul/li/a)[1]"
+                                },
+                                {
+                                    "id": 9,
+                                    "type": "xpath:href",
+                                    "selector": "(//a[contains(@href, \"javascript:docommand('CUSTOMER,INPUT I F3');\")])[1]"
+                                },
+                                {
+                                    "id": 10,
+                                    "type": "xpath:innerText",
+                                    "selector": "//a[contains(.,'Individual Customer')]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "//a[contains(.,'Individual Customer')]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 8
+            },
+            {
+                "command": {
+                    "name": "switch to window",
+                    "fields": [
+                        {
+                            "name": "index",
+                            "type": "text",
+                            "label": "Enter Index",
+                            "place_holder": "Enter Index",
+                            "value": "handle=${win8150}",
+                            "required": true
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "handle=${win8150}",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 9
+            },
+            {
+                "command": {
+                    "name": "switch to iframe",
+                    "fields": [
+                        {
+                            "name": "index",
+                            "type": "text",
+                            "label": "Enter Index",
+                            "place_holder": "Enter Index",
+                            "value": "-1",
+                            "required": true
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "-1",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 10
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "fieldName:TITLE",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:TITLE"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:TITLE"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ATITLE"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[1]/td[3]/select[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr > td:nth-child(3) > select.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(3) > select"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//select[@id='fieldName:TITLE'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr/td[3]/select)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr/td[3]/select)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 11
+            },
+            {
+                "command": {
+                    "name": "select",
+                    "fields": [
+                        {
+                            "name": "value",
+                            "type": "text",
+                            "label": "Value",
+                            "place_holder": "Enter Value",
+                            "value": "First Lieutenant: Army",
+                            "required": true
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Field Name",
+                            "place_holder": "Field Name",
+                            "value": "(//table[@id='tab1']/tbody/tr/td[3]/select)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:TITLE"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:TITLE"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ATITLE"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[1]/td[3]/select[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr > td:nth-child(3) > select.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(3) > select"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//select[@id='fieldName:TITLE'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr/td[3]/select)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr/td[3]/select)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "textarea",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "value": "(//table[@id='tab1']/tbody/tr/td[3]/select)[1]",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 12
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "fieldName:GIVEN.NAMES",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:GIVEN.NAMES"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:GIVEN.NAMES"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3AGIVEN\\.NAMES"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[2]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(2) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(2) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:GIVEN.NAMES'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[2]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[2]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 13
+            },
+            {
+                "command": {
+                    "name": "type",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Value",
+                            "value": "Hira Faheem",
+                            "required": true,
+                            "is_unique": false
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "LEGAL-ISS-CTRY",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#C1_C2_C1_C1_C2_C3_QUE_--CUSTOMER--LEGAL-ISS-CTRY--_R1"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "#C1_C2_C1_C1_C2_C3_QUE_--CUSTOMER--LEGAL-ISS-CTRY--_R1"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3AGIVEN\\.NAMES"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[2]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(2) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(2) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:GIVEN.NAMES'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[2]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "#C1_C2_C1_C1_C2_C3_QUE_--CUSTOMER--LEGAL-ISS-CTRY--_R1",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false
+                },
+                "order": 14
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "fieldName:NAME.1:1",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:NAME.1:1"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:NAME.1:1"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ANAME\\.1\\3A 1"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[3]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(3) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(3) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:NAME.1:1'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[3]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[3]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 15
+            },
+            {
+                "command": {
+                    "name": "type",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Value",
+                            "value": "Hira Faheem ",
+                            "required": true,
+                            "is_unique": false
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "fieldName:NAME.1:1",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:NAME.1:1"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:NAME.1:1"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ANAME\\.1\\3A 1"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[3]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(3) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(3) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:NAME.1:1'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[3]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[3]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false
+                },
+                "order": 16
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "fieldName:SHORT.NAME:1",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:SHORT.NAME:1"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:SHORT.NAME:1"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ASHORT\\.NAME\\3A 1"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[4]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(4) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(4) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:SHORT.NAME:1'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[4]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[4]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 17
+            },
+            {
+                "command": {
+                    "name": "type",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Value",
+                            "value": "HF",
+                            "required": true,
+                            "is_unique": false
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "fieldName:SHORT.NAME:1",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:SHORT.NAME:1"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:SHORT.NAME:1"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ASHORT\\.NAME\\3A 1"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[4]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(4) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(4) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:SHORT.NAME:1'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[4]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[4]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false
+                },
+                "order": 18
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "radio:tab1:GENDER",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#radio:tab1:GENDER"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "radio:tab1:GENDER"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "td:nth-child(1) > #radio\\3Atab1\\3AGENDER"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[5]/td[3]/table[1]/tbody[1]/tr[1]/td[1]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(5) > td:nth-child(3) > table:nth-child(2) > tbody > tr > td > input.radioCheckStyle"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(5) > td:nth-child(3) > table:nth-child(2) > tbody > tr > td > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='radio:tab1:GENDER'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[5]/td[3]/table/tbody/tr/td/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[5]/td[3]/table/tbody/tr/td/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 19
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "fieldName:MNEMONIC",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:MNEMONIC"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:MNEMONIC"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3AMNEMONIC"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[4]/td[7]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(4) > td:nth-child(7) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(4) > td:nth-child(7) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:MNEMONIC'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[4]/td[7]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[4]/td[7]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 20
+            },
+            {
+                "command": {
+                    "_id": "689ad4b802f146ef91505951",
+                    "order": 21,
+                    "name": "type",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Value",
+                            "value": "HIRA1234",
+                            "required": true,
+                            "is_unique": true
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "fieldName:MNEMONIC",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:MNEMONIC"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:MNEMONIC"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3AMNEMONIC"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[4]/td[7]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(4) > td:nth-child(7) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(4) > td:nth-child(7) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:MNEMONIC'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[4]/td[7]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[4]/td[7]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false,
+                    "is_skip": false
+                },
+                "order": 21
+            },
+            {
+                "command": {
+                    "name": "type",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Value",
+                            "value": "",
+                            "required": true,
+                            "is_unique": false
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "fieldName:SECTOR",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:SECTOR"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:SECTOR"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ASECTOR"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[7]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(7) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(7) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:SECTOR'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[7]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[7]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false
+                },
+                "order": 22
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "fieldName:SECTOR",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:SECTOR"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:SECTOR"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ASECTOR"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[7]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(7) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(7) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:SECTOR'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[7]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[7]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 23
+            },
+            {
+                "command": {
+                    "name": "type",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Value",
+                            "value": "1001",
+                            "required": true,
+                            "is_unique": false
+                        },
+                        {
+                            "name": "field_name",
+                            "type": "text",
+                            "label": "Label Name",
+                            "place_holder": "Enter Label Name",
+                            "value": "fieldName:SECTOR",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#fieldName:SECTOR"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "name",
+                                    "selector": "fieldName:SECTOR"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#fieldName\\3ASECTOR"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[7]/td[3]/input[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "div.scroll_contract_screen > table > tbody > tr:nth-child(3) > td > table.tab > tbody > tr:nth-child(7) > td:nth-child(3) > input.dealbox"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr:nth-child(7) > td:nth-child(3) > input"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//input[@id='fieldName:SECTOR'])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='tab1']/tbody/tr[7]/td[3]/input)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='tab1']/tbody/tr[7]/td[3]/input)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false
+                },
+                "order": 24
+            },
+            {
+                "command": {
+                    "name": "mouse down",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "Validate a deal",
+                            "required": true
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "css:finder",
+                                    "selector": "table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(2) > a > img"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[2]/table[1]/thead[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/img[1]"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:position",
+                                    "selector": "thead > tr > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > div > table > tbody > tr > td:nth-child(2) > a > img"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:divposition",
+                                    "selector": "thead > tr > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > div > table > tbody > tr > td:nth-child(2) > a > img"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "xpath:img",
+                                    "selector": "(//img[@alt='Validate a deal'])[1]"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td[2]/a/img)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td[2]/a/img)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "textarea",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": false
+                        }
+                    ]
+                },
+                "order": 25
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "action",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "css:finder",
+                                    "selector": ".window"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:position",
+                                    "selector": "body.window"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:divposition",
+                                    "selector": "body"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "xpath:innerText",
+                                    "selector": "//body[contains(.,'Your request is being processed.')]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "//html/body",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 26
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "201143",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "css:finder",
+                                    "selector": ".iddisplay"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[2]/table[1]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/span[1]"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:position",
+                                    "selector": "span.iddisplay"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:divposition",
+                                    "selector": "thead > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > span"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='toolBar']/table/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/span)[1]"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "xpath:innerText",
+                                    "selector": "//span[contains(.,'201143')]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": ".iddisplay",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 27
+            },
+            {
+                "command": {
+                    "name": "store variable",
+                    "description": "Gets the value of element and stores it for later use. This works for any input type element.",
+                    "tooltip": "this is store variable",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Step Name",
+                            "value": "message",
+                            "required": true
+                        },
+                        {
+                            "name": "option",
+                            "type": "lookup",
+                            "label": "Status",
+                            "place_holder": "Status",
+                            "selected": "from element",
+                            "required": true,
+                            "values": [
+                                {
+                                    "option": "from element",
+                                    "fields": [
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": ".iddisplay",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "from javascript",
+                                    "fields": [
+                                        {
+                                            "name": "function",
+                                            "type": "textarea",
+                                            "label": "Function",
+                                            "place_holder": "Function",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "iframe_selector",
+                            "type": "text",
+                            "label": "Iframe Selector",
+                            "place_holder": "Iframe Selector",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "description",
+                            "type": "textarea",
+                            "label": "Description",
+                            "place_holder": "Description",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "regex",
+                            "type": "text",
+                            "label": "Regex To Extract (Leave blank if not needed)",
+                            "place_holder": "Regex To Extract (Leave blank if not needed)",
+                            "value": "",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false,
+                    "is_skip": false,
+                    "element_must_visible": false,
+                    "execute_network_call": false,
+                    "target_element_type_id": 1,
+                    "test_fail_type_id": 1
+                },
+                "order": 28
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "Commit the deal",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "css:finder",
+                                    "selector": "td:nth-child(1) > a > img"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[2]/table[1]/thead[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:position",
+                                    "selector": "thead > tr > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > div > table > tbody > tr > td > a:nth-child(2) > img"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:divposition",
+                                    "selector": "thead > tr > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > div > table > tbody > tr > td > a:nth-child(2) > img"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "xpath:img",
+                                    "selector": "(//img[@alt='Commit the deal'])[1]"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/a/img)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/a/img)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 29
+            },
+            {
+                "command": {
+                    "_id": "689ad4b802f146ef91505959",
+                    "order": 30,
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "Accept Overrides",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "id",
+                                    "selector": "#errorImg"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "linkText",
+                                    "selector": "Accept Overrides"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:finder",
+                                    "selector": "#errorImg"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[3]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "css:position",
+                                    "selector": "td.textbtn > a"
+                                },
+                                {
+                                    "id": 6,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td > a"
+                                },
+                                {
+                                    "id": 7,
+                                    "type": "xpath:link",
+                                    "selector": "(//a[contains(text(),'Accept Overrides')])[1]"
+                                },
+                                {
+                                    "id": 8,
+                                    "type": "xpath:attributes",
+                                    "selector": "(//a[@id='errorImg'])[1]"
+                                },
+                                {
+                                    "id": 9,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//div[@id='error_box']/table/tbody/tr[3]/td/table/tbody/tr/td/a)[1]"
+                                },
+                                {
+                                    "id": 10,
+                                    "type": "xpath:href",
+                                    "selector": "(//a[contains(@href, 'javascript:commitOverrides()')])[1]"
+                                },
+                                {
+                                    "id": 11,
+                                    "type": "xpath:innerText",
+                                    "selector": "//a[contains(.,'Accept Overrides')]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "//a[contains(.,'Accept Overrides')]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true,
+                            "value": "Accept Overrides"
+                        }
+                    ],
+                    "optional": true,
+                    "is_random": false,
+                    "is_skip": false
+                },
+                "order": 30
+            },
+            {
+                "command": {
+                    "name": "click",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Enter Name",
+                            "value": "action",
+                            "required": true
+                        },
+                        {
+                            "name": "force_click",
+                            "type": "checkbox",
+                            "label": "Force Invisible Element",
+                            "place_holder": "",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "css_path",
+                            "targets": [
+                                {
+                                    "id": 1,
+                                    "type": "css:finder",
+                                    "selector": ".message"
+                                },
+                                {
+                                    "id": 2,
+                                    "type": "xpath:full",
+                                    "selector": "//html/body/div[3]/div[2]/form[1]/div[4]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[1]"
+                                },
+                                {
+                                    "id": 3,
+                                    "type": "css:position",
+                                    "selector": "td.message"
+                                },
+                                {
+                                    "id": 4,
+                                    "type": "css:divposition",
+                                    "selector": "body > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(109) > table > tbody > tr > td > table:nth-child(53) > tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(2) > tbody > tr > td"
+                                },
+                                {
+                                    "id": 5,
+                                    "type": "xpath:idRelative",
+                                    "selector": "(//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td)[1]"
+                                }
+                            ],
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Enter CSS Path",
+                            "value": "(//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td)[1]",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "text",
+                            "label": "Description",
+                            "place_holder": "Enter Description",
+                            "required": true
+                        }
+                    ]
+                },
+                "order": 31
+            },
+            {
+                "command": {
+                    "_id": "68c91c9bf9c759340c6db497",
+                    "order": 32,
+                    "name": "assert",
+                    "fields": [
+                        {
+                            "name": "matches",
+                            "type": "lookup",
+                            "label": "Matches",
+                            "place_holder": "Matches",
+                            "selected": "contains",
+                            "required": true,
+                            "values": [
+                                {
+                                    "option": "attribute contains",
+                                    "fields": [
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "attribute_name",
+                                            "type": "text",
+                                            "label": "Attribute Name",
+                                            "place_holder": "Attribute Name",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Value",
+                                            "place_holder": "Value",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "attribute does not contain",
+                                    "fields": [
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "attribute_name",
+                                            "type": "text",
+                                            "label": "Attribute Name",
+                                            "place_holder": "Attribute Name",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Value",
+                                            "place_holder": "Value",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "attribute does not exist",
+                                    "fields": [
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "attribute_name",
+                                            "type": "text",
+                                            "label": "Attribute Name",
+                                            "place_holder": "Attribute Name",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "attribute exists",
+                                    "fields": [
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "attribute_name",
+                                            "type": "text",
+                                            "label": "Attribute Name",
+                                            "place_holder": "Attribute Name",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "contains",
+                                    "fields": [
+                                        {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Value",
+                                            "place_holder": "Value",
+                                            "value": "Txn Complete",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "(//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td)[1]",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "does not contain",
+                                    "fields": [
+                                        {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Value",
+                                            "place_holder": "Value",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "does not exist",
+                                    "fields": [
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "matches",
+                                    "fields": [
+                                        {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Value",
+                                            "place_holder": "Value",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "does not match",
+                                    "fields": [
+                                        {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Value",
+                                            "place_holder": "Value",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "exists",
+                                    "fields": [
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "file exists",
+                                    "fields": [
+                                        {
+                                            "name": "file_name",
+                                            "type": "text",
+                                            "label": "File Name",
+                                            "place_holder": "File name with extension",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "child count",
+                                    "fields": [
+                                        {
+                                            "name": "operation_id",
+                                            "type": "lookup",
+                                            "label": "Condition",
+                                            "place_holder": "Condition",
+                                            "selected": "less than",
+                                            "required": true,
+                                            "values": [
+                                                {
+                                                    "option": "less than",
+                                                    "fields": [
+                                                    ]
+                                                },
+                                                {
+                                                    "option": "greater than",
+                                                    "fields": [
+                                                    ]
+                                                },
+                                                {
+                                                    "option": "less than or equal to",
+                                                    "fields": [
+                                                    ]
+                                                },
+                                                {
+                                                    "option": "greater than or equal to",
+                                                    "fields": [
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "count",
+                                            "type": "number",
+                                            "label": "Count",
+                                            "place_holder": "Count Value",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "option": "regex",
+                                    "fields": [
+                                        {
+                                            "name": "value",
+                                            "type": "text",
+                                            "label": "Pattern",
+                                            "place_holder": "Pattern",
+                                            "value": "",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "css_path",
+                                            "targets": [
+                                            ],
+                                            "type": "text",
+                                            "label": "CSS Path",
+                                            "place_holder": "CSS Path",
+                                            "value": "",
+                                            "required": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name",
+                            "place_holder": "Name",
+                            "value": "Success Message",
+                            "required": true
+                        },
+                        {
+                            "name": "description",
+                            "type": "textarea",
+                            "label": "Description",
+                            "place_holder": "Description",
+                            "value": "",
+                            "required": false
+                        },
+                        {
+                            "name": "is_custom_error",
+                            "type": "checkbox",
+                            "label": "Custom Error ?",
+                            "place_holder": "",
+                            "value": false,
+                            "required": false
+                        },
+                        {
+                            "name": "error_message_path",
+                            "type": "text",
+                            "label": "CSS Path",
+                            "place_holder": "Css Selector / Error Message Textbox",
+                            "value": "",
+                            "required": false
+                        }
+                    ],
+                    "is_random": false,
+                    "is_skip": false,
+                    "element_must_visible": false,
+                    "execute_network_call": false,
+                    "target_element_type_id": 1,
+                    "test_fail_type_id": 1,
+                    "template_id": null
+                },
+                "order": 32
+            }
+        ],
+        "variables": [
+            {
+                "name": "message",
+                "test_name": "customerCreate",
+                "value": null,
+                "xpath": null,
+                "last_execution": null,
+                "type": 1,
+                "test_id": "68ad9a1b59ce08d7ed7f2ca0",
+                "api_id": null,
+                "api_identifier": null,
+                "api_request_identifier": null,
+                "api_var_id": null,
+                "user_id": "68ad7305993d5dea44a6489d",
+                "import_by": null,
+                "status": true,
+                "org_id": "68ad737059ce08d7ed7f2a88",
+                "__v": 0,
+                "created_at": "2025-08-26T11:27:23.386Z",
+                "updated_at": "2025-08-26T11:27:23.386Z"
+            }
+        ],
+        "name": "customerCreate",
+        "description": "Testcase from Recorder",
+        "script": [
+            ""
+        ],
+        "base_url": "http://52.15.154.57:9089/BrowserWeb/servlet/BrowserServlet",
+        "group_order": 2,
+        "data_driven": false,
+        "file_params": null,
+        "data": null,
+        "type": 1,
+        "screen_resolution": "{\"width\":\"1536\",\"height\":\"1536\"}",
+        "config": {
+            "browsers": [
+                1
+            ],
+            "default_browser": 1,
+            "run_type": 1,
+            "instance": 1,
+            "attachment": null,
+            "test_id": "68ad9a1b59ce08d7ed7f2ca0",
+            "user_id": "64044b19f6ad2b4d8988ddb5",
+            "status": true,
+            "created_at": "2025-08-12T05:44:24.673Z",
+            "updated_at": "2025-09-16T08:15:47.229Z",
+            "__v": 0,
+            "data_driven": false
+        },
+        "tags": [
+        ],
+        "test_config": {
+            "screen_shot_type": 1,
+            "highlight_dom_elements": true,
+            "scroll_to_element": true,
+            "wait_for_ajax": true,
+            "refine_targets": false
+        }
+    }
+]
