@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import re
 import requests
 from typing import Dict, List, Any
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 class PlaywrightToSchemaMigrator:
-    def __init__(self, ollama_url: str = "http://localhost:11434"):
-        self.ollama_url = ollama_url
+    def __init__(self, ollama_url: str = ""):
+        self.ollama_url = ollama_url or os.getenv('OLLAMA_URL', 'http://localhost:11434')
         
     def extract_playwright_actions(self, script_content: str) -> List[Dict[str, Any]]:
         """Extract actions from Playwright script using OLLAMA"""
@@ -68,7 +73,8 @@ class PlaywrightToSchemaMigrator:
         """Map Playwright action to schema command using OLLAMA"""
         
         # Load sample schema for reference
-        with open('/Users/aarij.hussaan/development/schema_migrator/sample_schemas/CustomerCreate.json', 'r') as f:
+        sample_schema_path = os.getenv('SAMPLE_SCHEMA_PATH', '/Users/aarij.hussaan/development/schema_migrator/sample_schemas/CustomerCreate.json')
+        with open(sample_schema_path, 'r') as f:
             sample_schema = json.load(f)
         
         prompt = f"""
@@ -425,8 +431,8 @@ class PlaywrightToSchemaMigrator:
 def main():
     migrator = PlaywrightToSchemaMigrator()
     
-    script_path = "/Users/aarij.hussaan/development/schema_migrator/sample_scripts/test_2.py"
-    output_path = "/Users/aarij.hussaan/development/schema_migrator/migrated_schema.json"
+    script_path = os.getenv('SCRIPT_PATH', '/Users/aarij.hussaan/development/schema_migrator/sample_scripts/test_2.py')
+    output_path = os.getenv('OUTPUT_PATH', '/Users/aarij.hussaan/development/schema_migrator/migrated_schema.json')
     
     try:
         schema = migrator.migrate_script(script_path, output_path)
